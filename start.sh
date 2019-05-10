@@ -18,11 +18,8 @@ fi
 
 trap term_handler SIGINT SIGTERM
 
-while true
-do
-  /usr/bin/mhddfs "$FILESYSTEMS" "$OUT" -o $OPTIONS & wait ${!}
-  echo "mhddfs crashed at: $(date +%Y.%m.%d-%T)"
-  fuse_unmount
-done
+  /usr/bin/mhddfs "$FILESYSTEMS" "$OUT" -o $OPTIONS
+  echo "mhddfs started at: $(date +%Y.%m.%d-%T)"
+
 
 exit 144
