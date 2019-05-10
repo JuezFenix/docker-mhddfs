@@ -20,6 +20,8 @@ trap term_handler SIGINT SIGTERM
 
   /usr/bin/mhddfs "$FILESYSTEMS" "$OUT" -o $OPTIONS
   echo "mhddfs started at: $(date +%Y.%m.%d-%T)"
-
+do
+sleep 50000000
+while (-1)
 
 exit 144
