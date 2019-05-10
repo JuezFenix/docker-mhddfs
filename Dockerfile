@@ -16,5 +16,5 @@ RUN dpkg -i /tmp/mhddfs.deb \
 
 COPY start.sh /
 RUN chmod +x /start.sh
-EXPOSE /input1 /input2 /output
+VOLUME /input1 /input2 /output
 CMD ["/start.sh"]
