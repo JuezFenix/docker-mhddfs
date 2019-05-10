@@ -1,4 +1,4 @@
-FROM debian-minimal
+FROM debian:stretch-slim
 MAINTAINER JuezFenix
 
 ENV OPTIONS="allow_other"
